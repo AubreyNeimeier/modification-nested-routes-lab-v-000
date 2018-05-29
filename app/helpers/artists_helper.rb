@@ -7,5 +7,5 @@ module ArtistsHelper
     if params[:artist_id].nil?
       <%= link_to "Add Artist", edit_artist_song_path(@song.artist, @song) if @song.artist %>
     end
-    
+
 end
