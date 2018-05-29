@@ -5,7 +5,7 @@ module ArtistsHelper
 
   def artist_select(song)
     if params[:artist_id].nil?
-      link_to "Add Artist", edit_artist_song_path(song.artist, song) if @song.artist
+      link_to "Add Artist", edit_song_path(song)
     else
       song.artist.name
     end
