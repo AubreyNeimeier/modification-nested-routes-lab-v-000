@@ -9,5 +9,6 @@ module ArtistsHelper
     else
       @song.artist.name
     end
+  end
 
 end
